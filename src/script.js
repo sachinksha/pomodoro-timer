@@ -5,7 +5,7 @@ const stopBtn = document.querySelector(".stoptimer");
 const timerAudio = document.querySelector(".timeraudio");
 const stopTimerAlarmBtn = document.querySelector(".stoptimeralarm");
 
-const timeSlots = [1, 3, 5, 10, 15, 20, 30, 45, 60];
+const timeSlots = [1, 3, 5, 10, 20, 30, 45, 60];
 
 let activeTime = -1;
 let timerId = null;

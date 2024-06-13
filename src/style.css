@@ -14,12 +14,15 @@ html {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  display: table-cell;
+  margin: auto;
+  vertical-align: middle;
+}
 main {
   text-align: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  align-content: center;
   border: 2px solid;
   border-radius: 2rem;
 }
@@ -47,16 +50,16 @@ aside {
   cursor: pointer;
   border-radius: 50%;
 }
-button{
-    font-weight: bold;
-    font-size: 1.5rem;
-    border-radius: 1rem;
+button {
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 1rem;
 }
 button:hover {
   background-color: palevioletred;
 }
 button:disabled,
-button[disabled]{
+button[disabled] {
   background-color: #cccccc;
   color: #666666;
 }
@@ -71,14 +74,24 @@ button[disabled]{
 }
 
 @keyframes tilt-shaking {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* Apply the animation to your text element */
 .tilt-effect {
-    animation: tilt-shaking 1s infinite;
+  animation: tilt-shaking 1s infinite;
 }
