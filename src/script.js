@@ -49,13 +49,7 @@ function resetActiveTimer() {
 }
 function onRemainingInterval() {
   let currentTime = performance.now();
-  const elapsed = Math.floor(currentTime - startTime);
   const remaining = Math.floor(activeTime - (currentTime - startTime));
-  setRemainingStatus(
-    `Elapsed: ${getTimeInMinsAndSecondsFormat(
-      elapsed
-    )}; Time remaining: ${getTimeInMinsAndSecondsFormat(remaining)}`
-  );
   setRemainingStatus(`Time left: ${getTimeInMinsAndSecondsFormat(remaining)}`);
   if(remaining <= (10 * 1000)) {
     remainingView.classList.add("tilt-effect");
