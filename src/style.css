@@ -20,6 +20,7 @@ main {
   text-align: center;
   justify-content: center;
   min-width: 65rem;
+  max-width: 70rem;
   border: 2px solid indianred;
   border-radius: 2rem;
 }
